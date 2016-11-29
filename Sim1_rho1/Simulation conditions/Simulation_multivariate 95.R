@@ -3,8 +3,8 @@ set.seed(123)
 
 #create population data
 #Sigma <- matrix(c(10,9,9, 9, 10, 9, 6, 3,10),3,3)
-Sigma=matrix(c(1,0.8,0.8, 0.8,1,0.8, 0.8,0.8,1),3,3)
-#Sigma=matrix(c(1,0.1,0.1, 0.1,1,0.1, 0.1,0.1,1),3,3)
+#Sigma=matrix(c(1,0.8,0.8, 0.8,1,0.8, 0.8,0.8,1),3,3)
+Sigma=matrix(c(1,0.1,0.1, 0.1,1,0.1, 0.1,0.1,1),3,3)
 population <- as.data.frame(mvrnorm(n=populationsize, c(1, 2, 3), Sigma))
 colnames(population) <- c("x", "ymis1", "ymis2")
 

@@ -48,3 +48,5 @@ table_print_rubin$ciw <- table_print_rubin$upper - table_print_rubin$lower
 table_combined <- cbind(table_print_finite[,c(1,2,7,8,9,13,12)],table_print_finite[,9],
                         table_print_rubin[,c(7,8,9,13,12)])
 print(xtable(table_combined, digits=c(1, 2, 2, 0, 2, 2, 2, 3, 2,2 , 2, 2, 2, 3)), include.rownames=FALSE)
+
+table
